@@ -1,0 +1,193 @@
+Script started on Mon 10 Aug 2009 01:11:28 PM MDT
+[01;32mjenica@jenica-laptop[01;34m ~/ruby/projects/timetrak $[00m scro[tge[K[K[K[K[Kipt/generate cucumber
+      create  features/step_definitions
+      create  features/step_definitions/webrat_steps.rb
+      create  config/environments/cucumber.rb
+      create  features/support
+      create  features/support/env.rb
+      create  features/support/paths.rb
+      exists  lib/tasks
+      create  lib/tasks/cucumber.rake
+      create  script/cucumber
+[01;32mjenica@jenica-laptop[01;34m ~/ruby/projects/timetrak $[00m cucumber feature -n
+missing argument: -n (OptionParser::MissingArgument)
+/usr/lib/ruby/1.8/optparse.rb:451:in `parse'
+/usr/lib/ruby/1.8/optparse.rb:1290:in `parse_in_order'
+/usr/lib/ruby/1.8/optparse.rb:1249:in `catch'
+/usr/lib/ruby/1.8/optparse.rb:1249:in `parse_in_order'
+/usr/lib/ruby/1.8/optparse.rb:1243:in `order!'
+/usr/lib/ruby/1.8/optparse.rb:1334:in `permute!'
+/usr/lib/ruby/1.8/optparse.rb:1355:in `parse!'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/configuration.rb:47:in `parse!'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:88:in `configuration'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:38:in `execute!'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:26:in `execute'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/cucumber:9
+/usr/bin/cucumber:19:in `load'
+/usr/bin/cucumber:19
+[01;32mjenica@jenica-laptop[01;34m ~/ruby/projects/timetrak $[00m cucumber feature -n[K[K[Ks =[K-n
+missing argument: -n (OptionParser::MissingArgument)
+/usr/lib/ruby/1.8/optparse.rb:451:in `parse'
+/usr/lib/ruby/1.8/optparse.rb:1290:in `parse_in_order'
+/usr/lib/ruby/1.8/optparse.rb:1249:in `catch'
+/usr/lib/ruby/1.8/optparse.rb:1249:in `parse_in_order'
+/usr/lib/ruby/1.8/optparse.rb:1243:in `order!'
+/usr/lib/ruby/1.8/optparse.rb:1334:in `permute!'
+/usr/lib/ruby/1.8/optparse.rb:1355:in `parse!'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/configuration.rb:47:in `parse!'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:88:in `configuration'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:38:in `execute!'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:26:in `execute'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/cucumber:9
+/usr/bin/cucumber:19:in `load'
+/usr/bin/cucumber:19
+[01;32mjenica@jenica-laptop[01;34m ~/ruby/projects/timetrak $[00m cucumber featuers
+No such file or directory - featuers (Errno::ENOENT)
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/feature_file.rb:35:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/feature_file.rb:35:in `open'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/feature_file.rb:35:in `source'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/feature_file.rb:45:in `lang'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/feature_file.rb:25:in `parse'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:74:in `load_plain_text_features'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:72:in `each'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:72:in `load_plain_text_features'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:52:in `execute!'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/../lib/cucumber/cli/main.rb:26:in `execute'
+/usr/lib/ruby/gems/1.8/gems/cucumber-0.3.92/bin/cucumber:9
+/usr/bin/cucumber:19:in `load'
+/usr/bin/cucumber:19
+[01;32mjenica@jenica-laptop[01;34m ~/ruby/projects/timetrak $[00m cucumber featuers[K[K[Kres
+Feature: Track Time
+  In order to enter my time
+  As an employee
+  I want to put start and end times and have my time calculated
+
+  Scenario: Enter Time[90m                   # features/enter_time.feature:6[0m
+    [33mGiven a new day[90m                      # features/enter_time.feature:7[0m[0m
+    [33mWhen I add a start time and end time[90m # features/enter_time.feature:8[0m[0m
+    [33mThen I should see start time[90m         # features/enter_time.feature:9[0m[0m
+    [33mAnd I should see end time[90m            # features/enter_time.feature:10[0m[0m
+    [33mAnd I should see total hours[90m         # features/enter_time.feature:11[0m[0m
+
+1 scenario ([33m1 undefined[0m)
+5 steps ([33m5 undefined[0m)
+0m0.055s
+[33m
+You can implement step definitions for undefined steps with these snippets:
+
+Given /^a new day$/ do
+  pending
+end
+
+When /^I add a start time and end time$/ do
+  pending
+end
+
+Then /^I should see start time$/ do
+  pending
+end
+
+Then /^I should see end time$/ do
+  pending
+end
+
+Then /^I should see total hours$/ do
+  pending
+end[0m
+
+[01;32mjenica@jenica-laptop[01;34m ~/ruby/projects/timetrak $[00m cucumber features
+Feature: Track Time
+  In order to enter my time
+  As an employee
+  I want to put start and end times and have my time calculated
+
+  Scenario: Enter Time[90m                        # features/enter_time.feature:6[0m
+    [33mGiven a new day[90m                           # features/enter_time.feature:7[0m[0m
+    [33mWhen I fill in start time with "10:00 am"[90m # features/enter_time.feature:8[0m[0m
+    [33mAnd I fill in end time with "12:00 pm"[90m    # features/enter_time.feature:9[0m[0m
+    [33mThen I should see start time[90m              # features/enter_time.feature:10[0m[0m
+    [33mAnd I should see end time[90m                 # features/enter_time.feature:11[0m[0m
+    [33mAnd I should see total hours[90m              # features/enter_time.feature:12[0m[0m
+
+1 scenario ([33m1 undefined[0m)
+6 steps ([33m6 undefined[0m)
+0m0.044s
+[33m
+You can implement step definitions for undefined steps with these snippets:
+
+Given /^a new day$/ do
+  pending
+end
+
+When /^I fill in start time with "([^\"]*)"$/ do |arg1|
+  pending
+end
+
+When /^I fill in end time with "([^\"]*)"$/ do |arg1|
+  pending
+end
+
+Then /^I should see start time$/ do
+  pending
+end
+
+Then /^I should see end time$/ do
+  pending
+end
+
+Then /^I should see total hours$/ do
+  pending
+end[0m
+
+[01;32mjenica@jenica-laptop[01;34m ~/ruby/projects/timetrak $[00m cucumber features
+Feature: Track Time
+  In order to enter my time
+  As an employee
+  I want to put start and end times and have my time calculated
+
+  Scenario: Enter Time[90m                        # features/enter_time.feature:6[0m
+    [33mGiven a new day[90m                           # features/enter_time.feature:7[0m[0m
+    [33mWhen I fill in start_time with "10:00 am"[90m # features/enter_time.feature:8[0m[0m
+    [33mAnd I fill in end_time with "12:00 pm"[90m    # features/enter_time.feature:9[0m[0m
+    [33mThen I should see start_time[90m              # features/enter_time.feature:10[0m[0m
+    [33mAnd I should see end_time[90m                 # features/enter_time.feature:11[0m[0m
+    [33mAnd I should see total_hours[90m              # features/enter_time.feature:12[0m[0m
+
+1 scenario ([33m1 undefined[0m)
+6 steps ([33m6 undefined[0m)
+0m0.042s
+[33m
+You can implement step definitions for undefined steps with these snippets:
+
+Given /^a new day$/ do
+  pending
+end
+
+When /^I fill in start_time with "([^\"]*)"$/ do |arg1|
+  pending
+end
+
+When /^I fill in end_time with "([^\"]*)"$/ do |arg1|
+  pending
+end
+
+Then /^I should see start_time$/ do
+  pending
+end
+
+Then /^I should see end_time$/ do
+  pending
+end
+
+Then /^I should see total_hours$/ do
+  pending
+end[0m
+
+[01;32mjenica@jenica-laptop[01;34m ~/ruby/projects/timetrak $[00m cucumber features
+Feature: Track Time
+  In order to enter my time
+  As an employee
+  I want to put start and end times and have my time calculated
+
+  Scenario: Enter Time[90m                       # features/enter_time.feature:6[0m
+    [33mGiven a new day[90m                          #
