@@ -1707,3 +1707,403 @@ Processing ProjectsController#index (for 127.0.0.1 at 2009-08-02 11:54:10) [GET]
 Rendering template within layouts/projects
 Rendering projects/index
 Completed in 50ms (View: 43, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing TimelinesController#index (for 127.0.0.1 at 2009-08-10 13:24:38) [GET]
+  [4;36;1mTimeline Load (91.6ms)[0m   [0;1mSELECT * FROM "timeline" [0m
+Rendering template within layouts/timelines
+Rendering timelines/index
+Completed in 288ms (View: 186, DB: 92) | 200 OK [http://localhost/timelines]
+
+
+Processing TimelinesController#new (for 127.0.0.1 at 2009-08-10 13:24:55) [GET]
+Rendering template within layouts/timelines
+Rendering timelines/new
+Rendered timelines/_edit (35.8ms)
+Completed in 74ms (View: 56, DB: 0) | 200 OK [http://localhost/timelines/new]
+
+
+Processing TimelinesController#new (for 127.0.0.1 at 2009-08-10 13:29:19) [GET]
+Rendering template within layouts/timelines
+Rendering timelines/new
+Rendered timelines/_edit (48.5ms)
+Completed in 117ms (View: 87, DB: 0) | 200 OK [http://localhost/timelines/new]
+
+
+Processing TimelinesController#new (for 127.0.0.1 at 2009-08-10 13:30:05) [GET]
+Rendering template within layouts/timelines
+Rendering timelines/new
+Rendered timelines/_edit (63.8ms)
+Completed in 463ms (View: 452, DB: 0) | 200 OK [http://localhost/timelines/new]
+
+
+Processing TimelinesController#create (for 127.0.0.1 at 2009-08-10 13:30:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"wwBRrGLa1k6DnilJ6FXDSq6BFwTmUwi8okO0KL2zDGQ=", "timeline"=>{"total_time"=>"", "end_time"=>"12:00 pm", "beg_time"=>"10:00 am"}}
+  [4;35;1mControl Load (0.5ms)[0m   [0mSELECT * FROM "control" ORDER BY control.controlid DESC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "control" ORDER BY control.controlid DESC LIMIT 1[0m
+  [4;35;1mControl Update (0.3ms)[0m   [0mUPDATE "control" SET "recid" = 7 WHERE "controlid" = 1[0m
+  [4;36;1mTimeline Create (0.2ms)[0m   [0;1mINSERT INTO "timeline" ("beg_date", "dt_create", "end_time", "total_time", "billable", "bug_nbr", "personal_time", "recid", "project", "dt_edit", "client", "case_nbr", "empid", "task", "timecard", "description", "off_time", "beg_time") VALUES(NULL, NULL, '2009-08-10 12:00:00', NULL, NULL, NULL, NULL, 7, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2009-08-10 10:00:00')[0m
+Redirected to http://localhost:3000/timelines/7
+Completed in 85ms (DB: 1) | 302 Found [http://localhost/timelines]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:30:18) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mTimeline Load (0.6ms)[0m   [0mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+Completed in 31ms (View: 19, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:44:45) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mTimeline Load (0.6ms)[0m   [0;1mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+Completed in 27ms (View: 8, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:46:24) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mTimeline Load (0.9ms)[0m   [0mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+Completed in 28ms (View: 9, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:48:56) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mTimeline Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/application
+Rendering timelines/show
+Completed in 31ms (View: 12, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:48:57) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:48:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:51:28) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mTimeline Load (1.3ms)[0m   [0mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/application
+Rendering timelines/show
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:51:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:51:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:51:31) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mTimeline Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/application
+Rendering timelines/show
+Completed in 27ms (View: 8, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:51:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:51:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:52:38) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mTimeline Load (0.5ms)[0m   [0mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/application
+Rendering timelines/show
+Completed in 103ms (View: 92, DB: 0) | 200 OK [http://localhost/timelines/7]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:52:50) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mTimeline Load (0.6ms)[0m   [0;1mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/application
+Rendering timelines/show
+Completed in 25ms (View: 14, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:52:56) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mTimeline Load (0.8ms)[0m   [0mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/application
+Rendering timelines/show
+Completed in 34ms (View: 15, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:52:56) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:52:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:52:57) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mTimeline Load (0.5ms)[0m   [0;1mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/application
+Rendering timelines/show
+Completed in 28ms (View: 16, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:52:57) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:52:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:52:58) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mTimeline Load (0.6ms)[0m   [0mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/application
+Rendering timelines/show
+Completed in 31ms (View: 18, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:52:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:52:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-08-10 13:53:35) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mTimeline Load (0.5ms)[0m   [0;1mSELECT * FROM "timeline" WHERE ("timeline"."recid" = 7) [0m
+Rendering template within layouts/application
+Rendering timelines/show
+Completed in 35ms (View: 13, DB: 1) | 200 OK [http://localhost/timelines/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:53:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-10 13:53:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)

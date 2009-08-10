@@ -1,21 +1,27 @@
-  <%= f.error_messages %>
+<%= content_for :css_links => 'ralph' %>
+<%= f.error_messages %>
 
+<!--
   <p>
     <%= f.label :empid %><br />
     <%= f.text_field :empid %>
   </p>
+-->
+<!--
   <p>
     <%= f.label :beg_date %><br />
     <%= f.datetime_select :beg_date %>
   </p>
+-->
   <p>
     <%= f.label :beg_time %><br />
-    <%= f.datetime_select :beg_time %>
+    <%= f.text_field :beg_time %>
   </p>
   <p>
     <%= f.label :end_time %><br />
-    <%= f.datetime_select :end_time %>
+    <%= f.text_field:end_time %>
   </p>
+<!--
   <p>
     <%= f.label :off_time %><br />
     <%= f.text_field :off_time %>
@@ -24,10 +30,12 @@
     <%= f.label :personal_time %><br />
     <%= f.text_field :personal_time %>
   </p>
+-->
   <p>
     <%= f.label :total_time %><br />
     <%= f.text_field :total_time %>
   </p>
+<!--
   <p>
     <%= f.label :client %><br />
     <%= f.text_field :client %>
@@ -67,4 +75,4 @@
   <p>
     <%= f.label :dt_edit %><br />
     <%= f.datetime_select :dt_edit %>
-  </p>
+  </p>-->

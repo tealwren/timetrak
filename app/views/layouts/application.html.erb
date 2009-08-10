@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title><%=h(yield(:title)||'Timetrak')%></title>
+    <%= javascript_include_tag 'jquery.js' %>
+    <%= stylesheet_link_tag 'default' %>
+    <%= yield(:css_links)||''%>
+    <%= yield(:css)||'' %>
+    <%= yield(:js_links)||''%>
+    <script>
+      <%= yield(:js)||'' %>
+    </script>
+    <%= yield(:head)||'' %>
+  </head>
+  <body>
+    <div id="content">
+      <p style="color: green"><%= flash[:notice] %></p>
+      <%= yield() %>
+    </div>
+  </body>
+</html>
