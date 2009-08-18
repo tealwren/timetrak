@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :projects
   map.resources :employees
   map.resources :controls
+  map.root :controller=>"login"
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
