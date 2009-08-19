@@ -3003,3 +3003,55 @@ ActionController::RoutingError (No route matches "/stylesheets/default.css" with
   -e:1
 
 Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#index (for 127.0.0.1 at 2009-08-19 12:09:36) [GET]
+  [4;36;1mTimeline Load (1.5ms)[0m   [0;1mSELECT * FROM "timeline" [0m
+Rendering template within layouts/application
+Rendering timelines/index
+Completed in 105ms (View: 95, DB: 2) | 200 OK [http://localhost/timelines]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-19 12:09:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-19 12:09:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/default.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#index (for 127.0.0.1 at 2009-08-19 12:26:07) [GET]
+  [4;35;1mTimeline Load (1.4ms)[0m   [0mSELECT * FROM "timeline" [0m
+Rendering template within layouts/application
+Rendering timelines/index
+Completed in 55ms (View: 24, DB: 1) | 200 OK [http://localhost/timelines]
